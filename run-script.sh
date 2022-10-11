@@ -1,3 +1,4 @@
+#!bash
 pages=(
   "about"
   "events"
