@@ -1,0 +1,9 @@
+{
+  "name": "gh-pages-symlink-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo building",
+    "postbuild": "bash run-script.sh"
+  }
+}

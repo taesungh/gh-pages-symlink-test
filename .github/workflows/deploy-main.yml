@@ -1,0 +1,19 @@
+name: deploy
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      - name: Run postbuild
+        run: npm run build
